@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA16BD0C22549D94005EEE2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD0B22549D94005EEE2D /* AppDelegate.m */; };
+		FA16BD0F22549D94005EEE2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD0E22549D94005EEE2D /* ViewController.m */; };
+		FA16BD1222549D94005EEE2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA16BD1022549D94005EEE2D /* Main.storyboard */; };
+		FA16BD1422549D95005EEE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA16BD1322549D95005EEE2D /* Assets.xcassets */; };
+		FA16BD1722549D95005EEE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA16BD1522549D95005EEE2D /* LaunchScreen.storyboard */; };
+		FA16BD1A22549D95005EEE2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD1922549D95005EEE2D /* main.m */; };
+		FA16BD2422549D95005EEE2D /* SuspensionProgressDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD2322549D95005EEE2D /* SuspensionProgressDemoTests.m */; };
+		FA16BD2F22549D95005EEE2D /* SuspensionProgressDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD2E22549D95005EEE2D /* SuspensionProgressDemoUITests.m */; };
+		FA16BD3F22549DF3005EEE2D /* LFWave.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD3E22549DF3005EEE2D /* LFWave.m */; };
+		FA16BD4222549F15005EEE2D /* LFWaveProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD4122549F15005EEE2D /* LFWaveProgress.m */; };
+		FA16BD462254A0BB005EEE2D /* SuspensionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD452254A0BB005EEE2D /* SuspensionView.m */; };
+		FA16BD492254A169005EEE2D /* SuspensionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16BD482254A169005EEE2D /* SuspensionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA16BD2022549D95005EEE2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA16BCFF22549D94005EEE2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA16BD0622549D94005EEE2D;
+			remoteInfo = SuspensionProgressDemo;
+		};
+		FA16BD2B22549D95005EEE2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA16BCFF22549D94005EEE2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA16BD0622549D94005EEE2D;
+			remoteInfo = SuspensionProgressDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA16BD0722549D94005EEE2D /* SuspensionProgressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuspensionProgressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA16BD0A22549D94005EEE2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA16BD0B22549D94005EEE2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA16BD0D22549D94005EEE2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA16BD0E22549D94005EEE2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA16BD1122549D94005EEE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA16BD1322549D95005EEE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA16BD1622549D95005EEE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA16BD1822549D95005EEE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA16BD1922549D95005EEE2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA16BD1F22549D95005EEE2D /* SuspensionProgressDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuspensionProgressDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA16BD2322549D95005EEE2D /* SuspensionProgressDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionProgressDemoTests.m; sourceTree = "<group>"; };
+		FA16BD2522549D95005EEE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA16BD2A22549D95005EEE2D /* SuspensionProgressDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuspensionProgressDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA16BD2E22549D95005EEE2D /* SuspensionProgressDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionProgressDemoUITests.m; sourceTree = "<group>"; };
+		FA16BD3022549D95005EEE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA16BD3D22549DF3005EEE2D /* LFWave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWave.h; sourceTree = "<group>"; };
+		FA16BD3E22549DF3005EEE2D /* LFWave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWave.m; sourceTree = "<group>"; };
+		FA16BD4022549F15005EEE2D /* LFWaveProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWaveProgress.h; sourceTree = "<group>"; };
+		FA16BD4122549F15005EEE2D /* LFWaveProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWaveProgress.m; sourceTree = "<group>"; };
+		FA16BD442254A0BB005EEE2D /* SuspensionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionView.h; sourceTree = "<group>"; };
+		FA16BD452254A0BB005EEE2D /* SuspensionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionView.m; sourceTree = "<group>"; };
+		FA16BD472254A169005EEE2D /* SuspensionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionManager.h; sourceTree = "<group>"; };
+		FA16BD482254A169005EEE2D /* SuspensionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA16BD0422549D94005EEE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD1C22549D95005EEE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD2722549D95005EEE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA16BCFE22549D94005EEE2D = {
+			isa = PBXGroup;
+			children = (
+				FA16BD3C22549DBD005EEE2D /* LFWaveProgress */,
+				FA16BD0922549D94005EEE2D /* SuspensionProgressDemo */,
+				FA16BD2222549D95005EEE2D /* SuspensionProgressDemoTests */,
+				FA16BD2D22549D95005EEE2D /* SuspensionProgressDemoUITests */,
+				FA16BD0822549D94005EEE2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA16BD0822549D94005EEE2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD0722549D94005EEE2D /* SuspensionProgressDemo.app */,
+				FA16BD1F22549D95005EEE2D /* SuspensionProgressDemoTests.xctest */,
+				FA16BD2A22549D95005EEE2D /* SuspensionProgressDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA16BD0922549D94005EEE2D /* SuspensionProgressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD432254A01E005EEE2D /* SuspensionView */,
+				FA16BD0A22549D94005EEE2D /* AppDelegate.h */,
+				FA16BD0B22549D94005EEE2D /* AppDelegate.m */,
+				FA16BD0D22549D94005EEE2D /* ViewController.h */,
+				FA16BD0E22549D94005EEE2D /* ViewController.m */,
+				FA16BD1022549D94005EEE2D /* Main.storyboard */,
+				FA16BD1322549D95005EEE2D /* Assets.xcassets */,
+				FA16BD1522549D95005EEE2D /* LaunchScreen.storyboard */,
+				FA16BD1822549D95005EEE2D /* Info.plist */,
+				FA16BD1922549D95005EEE2D /* main.m */,
+			);
+			path = SuspensionProgressDemo;
+			sourceTree = "<group>";
+		};
+		FA16BD2222549D95005EEE2D /* SuspensionProgressDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD2322549D95005EEE2D /* SuspensionProgressDemoTests.m */,
+				FA16BD2522549D95005EEE2D /* Info.plist */,
+			);
+			path = SuspensionProgressDemoTests;
+			sourceTree = "<group>";
+		};
+		FA16BD2D22549D95005EEE2D /* SuspensionProgressDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD2E22549D95005EEE2D /* SuspensionProgressDemoUITests.m */,
+				FA16BD3022549D95005EEE2D /* Info.plist */,
+			);
+			path = SuspensionProgressDemoUITests;
+			sourceTree = "<group>";
+		};
+		FA16BD3C22549DBD005EEE2D /* LFWaveProgress */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD3D22549DF3005EEE2D /* LFWave.h */,
+				FA16BD3E22549DF3005EEE2D /* LFWave.m */,
+				FA16BD4022549F15005EEE2D /* LFWaveProgress.h */,
+				FA16BD4122549F15005EEE2D /* LFWaveProgress.m */,
+			);
+			path = LFWaveProgress;
+			sourceTree = "<group>";
+		};
+		FA16BD432254A01E005EEE2D /* SuspensionView */ = {
+			isa = PBXGroup;
+			children = (
+				FA16BD442254A0BB005EEE2D /* SuspensionView.h */,
+				FA16BD452254A0BB005EEE2D /* SuspensionView.m */,
+				FA16BD472254A169005EEE2D /* SuspensionManager.h */,
+				FA16BD482254A169005EEE2D /* SuspensionManager.m */,
+			);
+			path = SuspensionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA16BD0622549D94005EEE2D /* SuspensionProgressDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA16BD3322549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemo" */;
+			buildPhases = (
+				FA16BD0322549D94005EEE2D /* Sources */,
+				FA16BD0422549D94005EEE2D /* Frameworks */,
+				FA16BD0522549D94005EEE2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuspensionProgressDemo;
+			productName = SuspensionProgressDemo;
+			productReference = FA16BD0722549D94005EEE2D /* SuspensionProgressDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA16BD1E22549D95005EEE2D /* SuspensionProgressDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA16BD3622549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemoTests" */;
+			buildPhases = (
+				FA16BD1B22549D95005EEE2D /* Sources */,
+				FA16BD1C22549D95005EEE2D /* Frameworks */,
+				FA16BD1D22549D95005EEE2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA16BD2122549D95005EEE2D /* PBXTargetDependency */,
+			);
+			name = SuspensionProgressDemoTests;
+			productName = SuspensionProgressDemoTests;
+			productReference = FA16BD1F22549D95005EEE2D /* SuspensionProgressDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA16BD2922549D95005EEE2D /* SuspensionProgressDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA16BD3922549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemoUITests" */;
+			buildPhases = (
+				FA16BD2622549D95005EEE2D /* Sources */,
+				FA16BD2722549D95005EEE2D /* Frameworks */,
+				FA16BD2822549D95005EEE2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA16BD2C22549D95005EEE2D /* PBXTargetDependency */,
+			);
+			name = SuspensionProgressDemoUITests;
+			productName = SuspensionProgressDemoUITests;
+			productReference = FA16BD2A22549D95005EEE2D /* SuspensionProgressDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA16BCFF22549D94005EEE2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = LiuFei;
+				TargetAttributes = {
+					FA16BD0622549D94005EEE2D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					FA16BD1E22549D95005EEE2D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = FA16BD0622549D94005EEE2D;
+					};
+					FA16BD2922549D95005EEE2D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = FA16BD0622549D94005EEE2D;
+					};
+				};
+			};
+			buildConfigurationList = FA16BD0222549D94005EEE2D /* Build configuration list for PBXProject "SuspensionProgressDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA16BCFE22549D94005EEE2D;
+			productRefGroup = FA16BD0822549D94005EEE2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA16BD0622549D94005EEE2D /* SuspensionProgressDemo */,
+				FA16BD1E22549D95005EEE2D /* SuspensionProgressDemoTests */,
+				FA16BD2922549D95005EEE2D /* SuspensionProgressDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA16BD0522549D94005EEE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16BD1722549D95005EEE2D /* LaunchScreen.storyboard in Resources */,
+				FA16BD1422549D95005EEE2D /* Assets.xcassets in Resources */,
+				FA16BD1222549D94005EEE2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD1D22549D95005EEE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD2822549D95005EEE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA16BD0322549D94005EEE2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16BD3F22549DF3005EEE2D /* LFWave.m in Sources */,
+				FA16BD462254A0BB005EEE2D /* SuspensionView.m in Sources */,
+				FA16BD4222549F15005EEE2D /* LFWaveProgress.m in Sources */,
+				FA16BD492254A169005EEE2D /* SuspensionManager.m in Sources */,
+				FA16BD0F22549D94005EEE2D /* ViewController.m in Sources */,
+				FA16BD1A22549D95005EEE2D /* main.m in Sources */,
+				FA16BD0C22549D94005EEE2D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD1B22549D95005EEE2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16BD2422549D95005EEE2D /* SuspensionProgressDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16BD2622549D95005EEE2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16BD2F22549D95005EEE2D /* SuspensionProgressDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA16BD2122549D95005EEE2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA16BD0622549D94005EEE2D /* SuspensionProgressDemo */;
+			targetProxy = FA16BD2022549D95005EEE2D /* PBXContainerItemProxy */;
+		};
+		FA16BD2C22549D95005EEE2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA16BD0622549D94005EEE2D /* SuspensionProgressDemo */;
+			targetProxy = FA16BD2B22549D95005EEE2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA16BD1022549D94005EEE2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA16BD1122549D94005EEE2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA16BD1522549D95005EEE2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA16BD1622549D95005EEE2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA16BD3122549D95005EEE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA16BD3222549D95005EEE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA16BD3422549D95005EEE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA16BD3522549D95005EEE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA16BD3722549D95005EEE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuspensionProgressDemo.app/SuspensionProgressDemo";
+			};
+			name = Debug;
+		};
+		FA16BD3822549D95005EEE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuspensionProgressDemo.app/SuspensionProgressDemo";
+			};
+			name = Release;
+		};
+		FA16BD3A22549D95005EEE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuspensionProgressDemo;
+			};
+			name = Debug;
+		};
+		FA16BD3B22549D95005EEE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuspensionProgressDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiuFei.SuspensionProgressDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuspensionProgressDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA16BD0222549D94005EEE2D /* Build configuration list for PBXProject "SuspensionProgressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16BD3122549D95005EEE2D /* Debug */,
+				FA16BD3222549D95005EEE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA16BD3322549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16BD3422549D95005EEE2D /* Debug */,
+				FA16BD3522549D95005EEE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA16BD3622549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16BD3722549D95005EEE2D /* Debug */,
+				FA16BD3822549D95005EEE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA16BD3922549D95005EEE2D /* Build configuration list for PBXNativeTarget "SuspensionProgressDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16BD3A22549D95005EEE2D /* Debug */,
+				FA16BD3B22549D95005EEE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA16BCFF22549D94005EEE2D /* Project object */;
+}
