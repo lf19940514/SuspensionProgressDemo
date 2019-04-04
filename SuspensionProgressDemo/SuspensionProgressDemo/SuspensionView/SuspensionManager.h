@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic ,assign) CGFloat progress;
 
+//点击悬浮球回调
+@property (nonatomic, copy) void (^suspensionClickBlock)(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

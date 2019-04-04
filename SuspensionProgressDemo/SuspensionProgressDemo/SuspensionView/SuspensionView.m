@@ -31,11 +31,16 @@
         self.userInteractionEnabled = YES;
         self.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.width);
         self.layer.cornerRadius = self.frame.size.width/2.0;
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor whiteColor];
+        self.layer.shadowOpacity = 0.2;
+        self.layer.shadowRadius =  self.frame.size.width/2.0;
         //拖动
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(changeLocation:)];
         pan.delaysTouchesBegan = YES;
         [self addGestureRecognizer:pan];
+        //点击
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapActionClicked:)];
+        [self addGestureRecognizer:tap];
         
         [self addSubview:self.waveProgress];
     }
@@ -116,6 +121,12 @@
 {
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
+}
+
+- (void)tapActionClicked:(UITapGestureRecognizer *)t {
+    if (self.suspensionClickBlock) {
+        self.suspensionClickBlock();
+    }
 }
 
 @end

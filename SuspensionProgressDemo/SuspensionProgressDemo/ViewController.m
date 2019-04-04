@@ -61,6 +61,9 @@
     [super viewDidAppear:animated];
     
     [[SuspensionManager sharedSuspensionViewManager] createSuspensionView];
+    [SuspensionManager sharedSuspensionViewManager].suspensionClickBlock = ^{
+        NSLog(@"点击悬浮球");
+    };
 }
 
 @end

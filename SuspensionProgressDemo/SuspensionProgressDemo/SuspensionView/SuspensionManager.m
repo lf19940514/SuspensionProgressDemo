@@ -30,7 +30,12 @@ static SuspensionManager *sharedSuspensionManager = nil;
 - (SuspensionView *)susGlobe {
     if (!_susGlobe) {
         _susGlobe = [[SuspensionView alloc] initWithFrame:CGRectMake(0, 100, 60, 60)];
-        
+        __weak __typeof(&*self)weakSelf = self;
+        _susGlobe.suspensionClickBlock = ^{
+            if (weakSelf.suspensionClickBlock) {
+                weakSelf.suspensionClickBlock();
+            }
+        };
     }
     return _susGlobe;
 }
