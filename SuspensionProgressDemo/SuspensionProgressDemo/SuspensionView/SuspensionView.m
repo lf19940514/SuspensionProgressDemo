@@ -13,6 +13,9 @@
 #define kTouchHeight self.frame.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define IS_IPHONEX (kScreenHeight >= 812.0f)
+#define kTopSafeHeight (IS_IPHONEX ? 44 : 20)
+#define kBottomSafeHeight (IS_IPHONEX ? 34 : 0)
 
 @interface SuspensionView()
 
@@ -89,10 +92,10 @@
         CGFloat targetY = 0;
         
         //校正Y
-        if (panPoint.y < 15 + kTouchHeight/2.0) {
-            targetY = 15 + kTouchHeight/2.0;
-        }else if (panPoint.y > (kScreenHeight - kTouchHeight/2.0 - 15)) {
-            targetY = kScreenHeight - kTouchHeight/2.0 - 15;
+        if (panPoint.y < kTopSafeHeight + kTouchHeight/2.0) {
+            targetY = kTopSafeHeight + kTouchHeight/2.0;
+        }else if (panPoint.y > (kScreenHeight - kTouchHeight/2.0 - 15-kBottomSafeHeight)) {
+            targetY = kScreenHeight - kTouchHeight/2.0 - 15-kBottomSafeHeight;
         }else{
             targetY = panPoint.y;
         }
