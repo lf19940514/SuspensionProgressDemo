@@ -59,6 +59,8 @@
     UILabel *_label2;
 }
 
+@property (nonatomic, assign)int currentProgress;
+
 @end
 
 @implementation LFWave
@@ -111,6 +113,8 @@
     _label2.backgroundColor = [UIColor redColor];
     _label2.textColor = [UIColor whiteColor];
     [self addSubview:_label2];
+    
+    self.currentProgress = 0;
 }
 
 //初始化数据
@@ -132,6 +136,17 @@
     [self updateWaveY];
     [self updateWave1];
     [self updateWave2];
+    [self updateProgress];
+}
+
+-(void)updateProgress
+{
+    if (self.currentProgress < (int)(_progress*100)) {
+        self.currentProgress += 1;
+    }
+    if (self.currentProgress > (int)(_progress*100)) {
+        self.currentProgress -= 1;
+    }
 }
 
 //更新偏距的大小 直到达到目标偏距 让wave有一个匀速增长的效果
@@ -197,12 +212,15 @@
 
 #pragma mark -
 #pragma mark Setter
-- (void)setProgress:(CGFloat)progress {
-    _progress = progress;
-    _label0.text = [NSString stringWithFormat:@"%.0f%%",progress*100];
-    _label1.text = [NSString stringWithFormat:@"%.0f%%",progress*100];
-    _label2.text = [NSString stringWithFormat:@"%.0f%%",progress*100];
+- (void)setCurrentProgress:(int)currentProgress {
+    _currentProgress = currentProgress;
+    _label0.text = [NSString stringWithFormat:@"%i%%",currentProgress];
+    _label1.text = [NSString stringWithFormat:@"%i%%",currentProgress];
+    _label2.text = [NSString stringWithFormat:@"%i%%",currentProgress];
 }
+//- (void)setProgress:(CGFloat)progress {
+//    _progress = progress;
+//}
 
 - (void)setTextFont:(UIFont *)textFont {
     _label0.font = textFont;

@@ -66,4 +66,10 @@
     };
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    int num = arc4random()%100;
+    _waveProgress.progress = num/100.0f;
+    [SuspensionManager sharedSuspensionViewManager].progress = num/100.0f;
+}
+
 @end
